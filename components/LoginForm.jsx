@@ -47,6 +47,12 @@ const LoginForm = () => {
         <div>{message}</div>
       </form>
       <Link href="/register">Register</Link>
+      <button onClick={() => signIn("google", { callbackUrl: "/dashboard" })}>
+        Google
+      </button>
+      <button onClick={() => signIn("github", { callbackUrl: "/dashboard" })}>
+        Github
+      </button>
     </>
   );
 };
